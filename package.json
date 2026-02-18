@@ -1,0 +1,27 @@
+{
+  "name": "@granularjs/create-app",
+  "version": "0.1.0",
+  "description": "Create a new Granular app with one command",
+  "type": "module",
+  "bin": {
+    "create-granular-app": "./bin/create.js"
+  },
+  "files": [
+    "bin",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/user/granular"
+  },
+  "keywords": [
+    "granular",
+    "granularjs",
+    "create",
+    "boilerplate",
+    "template",
+    "vite",
+    "framework"
+  ],
+  "license": "MIT"
+}
