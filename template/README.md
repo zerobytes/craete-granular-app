@@ -1,6 +1,6 @@
 # My Granular App
 
-This project was created with [@granularjs/app](https://www.npmjs.com/package/@granularjs/app).
+This project was created with [@granularjs/create-app](https://www.npmjs.com/package/@granularjs/create-app).
 
 ## Getting Started
 

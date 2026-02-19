@@ -1,10 +1,10 @@
-# @granularjs/app
+# @granularjs/create-app
 
 Scaffolding for Granular projects. Create a new Granular app with one command.
 
 ## Usage
 
-### Using npm (recommended)
+Same as React / Vite: use `npm create` (runs `npx @granularjs/create-app` under the hood):
 
 ```bash
 npm create @granularjs/app my-app
@@ -12,10 +12,10 @@ cd my-app
 npm run dev
 ```
 
-Or with npx:
+Or call the package directly:
 
 ```bash
-npx @granularjs/app my-app
+npx @granularjs/create-app my-app
 ```
 
 ## What's included
