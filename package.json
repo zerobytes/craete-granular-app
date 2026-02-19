@@ -4,6 +4,7 @@
   "description": "Create a new Granular app with one command",
   "type": "module",
   "bin": {
+    "create-app": "./bin/create.js",
     "create-granular-app": "./bin/create.js"
   },
   "files": [

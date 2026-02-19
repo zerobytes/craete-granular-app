@@ -4,7 +4,7 @@ Scaffolding for Granular projects. Create a new Granular app with one command.
 
 ## Usage
 
-Same as React / Vite: use `npm create` (runs `npx @granularjs/create-app` under the hood):
+Same as React / Vite: use `npm create` (runs `npx @granularjs/create-app` under the hood). Run from the folder where you want the new app (e.g. your projects folder), not from inside the create-granular-app repo:
 
 ```bash
 npm create @granularjs/app my-app
