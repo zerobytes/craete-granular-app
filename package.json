@@ -1,5 +1,5 @@
 {
-  "name": "@granularjs/create-app",
+  "name": "@granularjs/app",
   "version": "0.1.0",
   "description": "Create a new Granular app with one command",
   "type": "module",

@@ -15,16 +15,7 @@ npm run dev
 Or with npx:
 
 ```bash
-npx @granularjs/create-app my-app
-```
-
-### Using degit (template only)
-
-```bash
-npx degit granularjs/granular/create-granular-app/template my-app
-cd my-app
-npm install
-npm run dev
+npx @granularjs/app my-app
 ```
 
 ## What's included
@@ -42,20 +33,26 @@ The template includes:
 
 ```
 my-app/
+├── .gitignore
 ├── index.html
 ├── package.json
+├── README.md
 ├── vite.config.js
 ├── public/
 │   └── favicon.svg
 └── src/
-    ├── main.js          # Entry point
-    ├── router.js        # Route definitions
-    ├── App.js           # App shell/layout
-    ├── styles.css       # Global styles
-    ├── components/      # Reusable components
-    └── pages/           # Page components
-        ├── Home.js
-        └── About.js
+    ├── main.js              # Entry point
+    ├── router.js            # Route definitions
+    ├── styles.css           # Global styles
+    ├── layouts/
+    │   └── app.layout.js    # App shell/layout
+    ├── components/          # Reusable components
+    │   └── todo-item.component.js
+    ├── pages/               # Page components
+    │   ├── home.page.js     # Home page with examples
+    │   └── about.page.js    # About page
+    └── stores/              # State stores
+        └── todo.store.js
 ```
 
 ## Development
