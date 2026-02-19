@@ -1,4 +1,4 @@
-# @granularjs/create-app
+# @granularjs/app
 
 Scaffolding for Granular projects. Create a new Granular app with one command.
 
