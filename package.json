@@ -10,6 +10,9 @@
     "bin",
     "template"
   ],
+  "scripts": {
+    "postversion": "git push && git push origin v$(node -p \"require('./package.json').version\")"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/user/granular"

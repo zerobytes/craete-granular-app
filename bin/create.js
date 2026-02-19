@@ -86,7 +86,12 @@ async function main() {
   
   log.step('Copying template files...');
   copyDir(templateDir, projectPath);
-  
+
+  const packageLocal = path.join(projectPath, 'package.local.json');
+  const viteLocal = path.join(projectPath, 'vite.config.local.js');
+  if (fs.existsSync(packageLocal)) fs.unlinkSync(packageLocal);
+  if (fs.existsSync(viteLocal)) fs.unlinkSync(viteLocal);
+
   log.step('Updating package.json...');
   updatePackageJson(projectPath, projectName);
   
