@@ -81,14 +81,21 @@ async function main() {
 
   const { projectName: rawName, flags } = parseArgs(process.argv.slice(2));
   const useSSR = !!flags.ssr;
+  const useJSX = !!flags.jsx;
   let projectName = rawName;
 
   if (flags.help) {
     console.log(`  Usage: create-granular-app [project-name] [options]\n`);
     console.log(`  Options:`);
+    console.log(`    --jsx     Scaffold a JSX SPA app (uses @granularjs/jsx)`);
     console.log(`    --ssr     Scaffold an SSR-ready app (Express + Vite SSR)`);
     console.log(`    --help    Show this help message\n`);
     process.exit(0);
+  }
+
+  if (useJSX && useSSR) {
+    log.error('Error: --jsx and --ssr are mutually exclusive (for now).');
+    process.exit(1);
   }
 
   if (!projectName) {
@@ -103,8 +110,8 @@ async function main() {
     process.exit(1);
   }
 
-  const templateName = useSSR ? 'template-ssr' : 'template';
-  const label = useSSR ? 'SSR' : 'SPA';
+  const templateName = useSSR ? 'template-ssr' : useJSX ? 'template-jsx' : 'template';
+  const label = useSSR ? 'SSR' : useJSX ? 'JSX SPA' : 'SPA';
 
   log.info(`\nCreating a new Granular ${label} app in ${COLORS.bold}${projectPath}${COLORS.reset}\n`);
 

@@ -10,6 +10,7 @@
   "files": [
     "bin",
     "template",
+    "template-jsx",
     "template-ssr"
   ],
   "scripts": {
